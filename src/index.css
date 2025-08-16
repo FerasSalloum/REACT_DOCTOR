@@ -1,1 +1,12 @@
 @import "tailwindcss";
+a.active {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #5f6fff;
+  transition: all 0.3s ease-in-out;
+}
+.menu a.active {
+  background-color: #5f6fff;
+  color: white;
+  border: none;
+  padding-bottom: 0.5rem;
+}
