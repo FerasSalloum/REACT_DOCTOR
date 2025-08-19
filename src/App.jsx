@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="container">
+    <div className="container m-auto">
       <div className="mx-4 sm:mx-[10%]">
         <Header />
         <Routes>
