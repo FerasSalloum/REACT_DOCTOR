@@ -1,4 +1,15 @@
 @import "tailwindcss";
+
+/* في ملف globals.css أو index.css */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Internet Explorer */
+    scrollbar-width: none; /* Firefox */
+  }
+}
 a.active {
   padding-bottom: 5px;
   border-bottom: 3px solid #5f6fff;
@@ -9,4 +20,10 @@ a.active {
   color: white;
   border: none;
   padding-bottom: 0.5rem;
+}
+.speciality:hover {
+  transform: translatey(-25%);
+}
+html {
+  scroll-behavior: smooth;
 }
