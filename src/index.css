@@ -9,6 +9,12 @@
     -ms-overflow-style: none; /* Internet Explorer */
     scrollbar-width: none; /* Firefox */
   }
+  .translatey-20:hover {
+    transform: translateY(-20%);
+  }
+  .translatey-10:hover {
+    transform: translateY(-10%);
+  }
 }
 a.active {
   padding-bottom: 5px;
@@ -21,9 +27,7 @@ a.active {
   border: none;
   padding-bottom: 0.5rem;
 }
-.speciality:hover {
-  transform: translatey(-25%);
-}
+
 html {
   scroll-behavior: smooth;
 }

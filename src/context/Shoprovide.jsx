@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { ShopContext } from "./ShopContext";
 import { useNavigate } from "react-router-dom";
-import { specialityData } from "../assets/assets";
+import { doctors, specialityData } from "../assets/assets";
 
 const Shoprovide = (props) => {
   const navigate = useNavigate();
 
   const specialitys = specialityData.slice();
+  const alldoctor = doctors.slice();
   const myLinks = {
     HOME: "/",
     LOGIN: "/login",
@@ -20,6 +21,7 @@ const Shoprovide = (props) => {
     myLinks,
     togelNav,
     specialitys,
+    alldoctor,
     navigate,
     setTogelNav,
   };
